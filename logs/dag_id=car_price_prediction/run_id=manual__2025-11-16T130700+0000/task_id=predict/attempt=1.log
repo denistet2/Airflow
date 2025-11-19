@@ -1,0 +1,12 @@
+{"timestamp":"2025-11-16T13:07:13.798959Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-16T13:07:13.800557Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/hw_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-16T13:07:13.819511Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/hw_dag.py","lineno":6,"logger":"py.warnings"}
+{"timestamp":"2025-11-16T13:07:13.846605Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-11-16T13:07:13.847284Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-11-16T13:07:13.847812Z","level":"info","event":"Current task name:predict","logger":"task.stdout"}
+{"timestamp":"2025-11-16T13:07:13.848350Z","level":"info","event":"Dag name:car_price_prediction","logger":"task.stdout"}
+{"timestamp":"2025-11-16T13:07:13.850362Z","level":"info","event":"Test Predict SUCCESS","logger":"task.stdout"}
+{"timestamp":"2025-11-16T13:07:13.850902Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":215}
+{"timestamp":"2025-11-16T13:07:13.869358Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-11-16T13:07:13.869906Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-11-16T13:07:13.870551Z","level":"info","event":"Task operator:<Task(PythonOperator): predict>","logger":"task.stdout"}

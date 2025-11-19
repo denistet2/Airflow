@@ -1,0 +1,23 @@
+{"timestamp":"2025-11-16T14:41:52.985667Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-16T14:41:52.989867Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/hw_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-16T14:41:56.679387Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/hw_dag.py","lineno":6,"logger":"py.warnings"}
+{"timestamp":"2025-11-16T14:41:56.712648Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-11-16T14:41:56.713281Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-11-16T14:41:56.714069Z","level":"info","event":"Current task name:predict","logger":"task.stdout"}
+{"timestamp":"2025-11-16T14:41:56.714575Z","level":"info","event":"Dag name:car_price_prediction","logger":"task.stdout"}
+{"timestamp":"2025-11-16T14:41:56.722445Z","level":"error","event":"2025-11-16 14:41:56,721 - modules.predict - INFO - --- Начинаем процесс прогнозирования ---","logger":"task.stderr"}
+{"timestamp":"2025-11-16T14:41:56.722059Z","level":"info","event":"--- Начинаем процесс прогнозирования ---","logger":"modules.predict","filename":"predict.py","lineno":81}
+{"timestamp":"2025-11-16T14:41:56.731861Z","level":"error","event":"2025-11-16 14:41:56,731 - modules.predict - INFO - Модель успешно загружена из: /opt/airflow/airflow_hw/data/models/model.pkl","logger":"task.stderr"}
+{"timestamp":"2025-11-16T14:41:56.732150Z","level":"info","event":"Модель успешно загружена из: /opt/airflow/airflow_hw/data/models/model.pkl","logger":"modules.predict","filename":"predict.py","lineno":29}
+{"timestamp":"2025-11-16T14:41:58.886827Z","level":"error","event":"2025-11-16 14:41:58,885 - modules.predict - INFO - Объединено 1 файлов. Общее количество строк: 10000","logger":"task.stderr"}
+{"timestamp":"2025-11-16T14:41:58.885249Z","level":"info","event":"Объединено 1 файлов. Общее количество строк: 10000","logger":"modules.predict","filename":"predict.py","lineno":49}
+{"timestamp":"2025-11-16T14:42:00.873101Z","level":"error","event":"2025-11-16 14:42:00,872 - modules.predict - INFO - Предсказания выполнены и добавлены в DataFrame.","logger":"task.stderr"}
+{"timestamp":"2025-11-16T14:42:00.873057Z","level":"info","event":"Предсказания выполнены и добавлены в DataFrame.","logger":"modules.predict","filename":"predict.py","lineno":63}
+{"timestamp":"2025-11-16T14:42:03.210852Z","level":"error","event":"2025-11-16 14:42:03,210 - modules.predict - INFO - Предсказания сохранены в: /opt/airflow/airflow_hw/data/predictions/predictions.csv","logger":"task.stderr"}
+{"timestamp":"2025-11-16T14:42:03.211493Z","level":"error","event":"2025-11-16 14:42:03,210 - modules.predict - INFO - --- Процесс прогнозирования завершен ---","logger":"task.stderr"}
+{"timestamp":"2025-11-16T14:42:03.210815Z","level":"info","event":"Предсказания сохранены в: /opt/airflow/airflow_hw/data/predictions/predictions.csv","logger":"modules.predict","filename":"predict.py","lineno":75}
+{"timestamp":"2025-11-16T14:42:03.211082Z","level":"info","event":"--- Процесс прогнозирования завершен ---","logger":"modules.predict","filename":"predict.py","lineno":95}
+{"timestamp":"2025-11-16T14:42:03.215443Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":215}
+{"timestamp":"2025-11-16T14:42:03.236591Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-11-16T14:42:03.237053Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-11-16T14:42:03.237687Z","level":"info","event":"Task operator:<Task(PythonOperator): predict>","logger":"task.stdout"}

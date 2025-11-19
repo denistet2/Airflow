@@ -1,0 +1,20 @@
+{"timestamp":"2025-11-18T16:15:22.386849Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-18T16:15:22.388626Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/hw_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-18T16:15:23.685843Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/hw_dag.py","lineno":6,"logger":"py.warnings"}
+{"timestamp":"2025-11-18T16:15:23.717245Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-11-18T16:15:23.718119Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-11-18T16:15:23.718604Z","level":"info","event":"Current task name:pipeline","logger":"task.stdout"}
+{"timestamp":"2025-11-18T16:15:23.719043Z","level":"info","event":"Dag name:car_price_prediction","logger":"task.stdout"}
+{"timestamp":"2025-11-18T16:15:23.720938Z","level":"info","event":"--- Начинаю процесс обучения ML-пайплайна ---","logger":"modules.pipeline","filename":"pipeline.py","lineno":104}
+{"timestamp":"2025-11-18T16:15:24.525818Z","level":"info","event":"Загружено и объединено 1 файлов. Общее строк: 10000","logger":"modules.pipeline","filename":"pipeline.py","lineno":99}
+{"timestamp":"2025-11-18T16:15:24.529071Z","level":"info","event":"Начинаю кросс-валидацию моделей...","logger":"modules.pipeline","filename":"pipeline.py","lineno":154}
+{"timestamp":"2025-11-18T16:15:24.538909Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.12/site-packages/joblib/parallel.py","lineno":1379,"logger":"py.warnings"}
+{"timestamp":"2025-11-18T16:19:47.618150Z","level":"info","event":"Модель LogisticRegression: Средняя Accuracy на CV: 0.7825","logger":"modules.pipeline","filename":"pipeline.py","lineno":162}
+{"timestamp":"2025-11-18T16:19:47.636825Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.12/site-packages/joblib/parallel.py","lineno":1379,"logger":"py.warnings"}
+{"timestamp":"2025-11-18T16:19:53.698061Z","level":"info","event":"Модель KNeighborsClassifier: Средняя Accuracy на CV: 0.7292","logger":"modules.pipeline","filename":"pipeline.py","lineno":162}
+{"timestamp":"2025-11-18T16:19:53.707165Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.12/site-packages/joblib/parallel.py","lineno":1379,"logger":"py.warnings"}
+{"timestamp":"2025-11-18T16:20:29.883535Z","level":"info","event":"Модель DecisionTreeClassifier: Средняя Accuracy на CV: 0.7218","logger":"modules.pipeline","filename":"pipeline.py","lineno":162}
+{"timestamp":"2025-11-18T16:20:29.883821Z","level":"info","event":"Лучшая модель: **LogisticRegression** с Accuracy: **0.7825**","logger":"modules.pipeline","filename":"pipeline.py","lineno":169}
+{"timestamp":"2025-11-18T16:20:29.883942Z","level":"info","event":"Обучаю итоговый пайплайн на полных данных...","logger":"modules.pipeline","filename":"pipeline.py","lineno":172}
+{"timestamp":"2025-11-18T16:20:39.956834Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_found","message":"Task Instance not found"}},"logger":"task"}
+{"timestamp":"2025-11-18T16:20:45.019783Z","level":"error","event":"Task killed!","logger":"task"}

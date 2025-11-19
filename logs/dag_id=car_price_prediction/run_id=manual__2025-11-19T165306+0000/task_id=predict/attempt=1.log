@@ -1,0 +1,23 @@
+{"timestamp":"2025-11-19T17:05:12.252352Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-19T17:05:12.255931Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/hw_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-19T17:05:15.640670Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/hw_dag.py","lineno":6,"logger":"py.warnings"}
+{"timestamp":"2025-11-19T17:05:15.692228Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-11-19T17:05:15.692804Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-11-19T17:05:15.693340Z","level":"info","event":"Current task name:predict","logger":"task.stdout"}
+{"timestamp":"2025-11-19T17:05:15.693752Z","level":"info","event":"Dag name:car_price_prediction","logger":"task.stdout"}
+{"timestamp":"2025-11-19T17:05:15.696807Z","level":"error","event":"2025-11-19 17:05:15,692 - modules.predict - INFO - --- Старт прогнозирования ---","logger":"task.stderr"}
+{"timestamp":"2025-11-19T17:05:15.696458Z","level":"info","event":"--- Старт прогнозирования ---","logger":"modules.predict","filename":"predict.py","lineno":98}
+{"timestamp":"2025-11-19T17:05:15.711986Z","level":"error","event":"2025-11-19 17:05:15,711 - modules.predict - INFO - Модель успешно загружена из: /opt/airflow/airflow_hw/data/models/model.pkl","logger":"task.stderr"}
+{"timestamp":"2025-11-19T17:05:15.711618Z","level":"info","event":"Модель успешно загружена из: /opt/airflow/airflow_hw/data/models/model.pkl","logger":"modules.predict","filename":"predict.py","lineno":31}
+{"timestamp":"2025-11-19T17:05:17.736871Z","level":"error","event":"2025-11-19 17:05:17,736 - modules.predict - INFO - Объединено 1 файлов. Строк: 10000","logger":"task.stderr"}
+{"timestamp":"2025-11-19T17:05:17.737258Z","level":"info","event":"Объединено 1 файлов. Строк: 10000","logger":"modules.predict","filename":"predict.py","lineno":55}
+{"timestamp":"2025-11-19T17:05:18.990340Z","level":"error","event":"2025-11-19 17:05:18,990 - modules.predict - INFO - Предсказания выполнены.","logger":"task.stderr"}
+{"timestamp":"2025-11-19T17:05:18.990689Z","level":"info","event":"Предсказания выполнены.","logger":"modules.predict","filename":"predict.py","lineno":71}
+{"timestamp":"2025-11-19T17:05:19.094542Z","level":"error","event":"2025-11-19 17:05:19,094 - modules.predict - INFO - Результат сохранен в: /opt/airflow/airflow_hw/data/predictions/predictions.csv","logger":"task.stderr"}
+{"timestamp":"2025-11-19T17:05:19.095467Z","level":"error","event":"2025-11-19 17:05:19,094 - modules.predict - INFO - --- Готово ---","logger":"task.stderr"}
+{"timestamp":"2025-11-19T17:05:19.094495Z","level":"info","event":"Результат сохранен в: /opt/airflow/airflow_hw/data/predictions/predictions.csv","logger":"modules.predict","filename":"predict.py","lineno":94}
+{"timestamp":"2025-11-19T17:05:19.095148Z","level":"info","event":"--- Готово ---","logger":"modules.predict","filename":"predict.py","lineno":108}
+{"timestamp":"2025-11-19T17:05:19.108575Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":215}
+{"timestamp":"2025-11-19T17:05:19.156458Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-11-19T17:05:19.157044Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-11-19T17:05:19.157909Z","level":"info","event":"Task operator:<Task(PythonOperator): predict>","logger":"task.stdout"}
